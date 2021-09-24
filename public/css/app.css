@@ -10002,6 +10002,11 @@ h3 {
     border-color: #dee2e6;
   }
 }
+html {
+  min-height: 100vh;
+  position: relative;
+}
+
 .gsc-input {
   width: 300px;
 }
@@ -10024,4 +10029,34 @@ h3 {
   padding: 0 5px;
   color: #ccc;
   content: "/ ";
+}
+
+.introduction-text {
+  font-size: 1.2rem;
+}
+
+.container-brands, .container-type-list, .container-manuals {
+  background-color: #e9ecef77;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 15px;
+}
+
+.all-brands-title, .brand-name-title, .brand-manual-discription, .brand-type-name-title, .type-discription, .manual-link {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.brand-link {
+  color: #283f52;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  padding-bottom: 23px;
 }
