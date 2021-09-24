@@ -41,7 +41,7 @@
 
 </div>
 
-<div class="">
+<div>
     @include('includes.footer')
 </div>
 

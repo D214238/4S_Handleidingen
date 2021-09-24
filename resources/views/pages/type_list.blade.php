@@ -5,10 +5,10 @@
 @stop
 
 @section('content')
+<div class="container-type-list">
+	<h1 class="brand-name-title">{{ $brand->name }}</h1>
 
-<h1>{{ $brand->name }}</h1>
-
-<p>{{ __('introduction_texts.type_list', ['brand'=>$brand->name]) }}</p>
+	<p class="brand-manual-discription">{{ __('introduction_texts.type_list', ['brand'=>$brand->name]) }}</p>
 
     <div class="container">
 		<ul>
@@ -19,5 +19,5 @@
 		@endforeach
 		</ul>
 	</div>
-
+</div>
 @stop

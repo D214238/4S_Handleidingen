@@ -17,7 +17,7 @@
     padding: 0.75rem 1rem;
     margin-bottom: 1rem;
     list-style: none;
-    background-color: #e9ecef;
+    background-color: $body-bg3;
     border-radius: 0.25rem;
 }
 
@@ -30,3 +30,24 @@
     color: #ccc;
     content: "/\00a0";
 }
+
+.introduction-text {
+    font-size: 1.2rem;
+}
+
+.container-brands, .container-type-list, .container-manuals {
+    background-color: $body-bg2;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 15px;
+}
+
+.all-brands-title, .brand-name-title, .brand-manual-discription, .brand-type-name-title, .type-discription, .manual-link {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.brand-link {
+    color: rgb(40, 63, 82);
+}
+

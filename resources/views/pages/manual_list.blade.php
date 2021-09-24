@@ -11,21 +11,22 @@
 
 @section('content')
 
-<h1>{{ $brand->name }} - {{ $type->name }}</h1>
+<div class="container-manuals">
+	<h1 class="brand-type-name-title">{{ $brand->name }} - {{ $type->name }}</h1>
 
-<p>{{ __('introduction_texts.type_list', ['brand'=>$brand->name, 'type'=>$type->name]) }}</p>
+	<p class="type-discription">{{ __('introduction_texts.type_list', ['brand'=>$brand->name, 'type'=>$type->name]) }}</p>
 
 
-	@foreach ($manuals as $manual)
-	
-		@if ($manual->locally_available)
-			<a href="/{{ $brand->id }}/{{ $brand->name_url_encoded }}/{{ $type->id }}/{{ $type->name_url_encoded }}/{{ $manual->id }}/" alt="{{ __('misc.view_manual_alt') }}" title="{{ __('misc.view_manual_alt') }}">{{ __('misc.view_manual') }}</a> 
-			({{$manual->filesize_human_readable}})
-		@else
-			<a href="{{ $manual->url }}" target="new" alt="{{ __('misc.download_manual_alt') }}" title="{{ __('misc.download_manual_alt') }}">{{ __('misc.download_manual') }}</a>
-		@endif
-		
-		<br />
-	@endforeach
- 
+		@foreach ($manuals as $manual)
+
+			@if ($manual->locally_available)
+				<a class="manual-link" href="/{{ $brand->id }}/{{ $brand->name_url_encoded }}/{{ $type->id }}/{{ $type->name_url_encoded }}/{{ $manual->id }}/" alt="{{ __('misc.view_manual_alt') }}" title="{{ __('misc.view_manual_alt') }}">{{ __('misc.view_manual') }}</a> 
+				({{$manual->filesize_human_readable}})
+			@else
+				<a class="manual-link" href="{{ $manual->url }}" target="new" alt="{{ __('misc.download_manual_alt') }}" title="{{ __('misc.download_manual_alt') }}">{{ __('misc.download_manual') }}</a>
+			@endif
+
+			<br />
+		@endforeach
+</div>
 @stop
