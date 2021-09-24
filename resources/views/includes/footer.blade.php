@@ -1,5 +1,5 @@
 
-<footer>
+<footer class="bg-dark text-light">
 	© {{ __('misc.copyright') }}
 </footer>
 
