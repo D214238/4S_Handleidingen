@@ -10052,11 +10052,20 @@ html {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  background-color: #343a40;
+  color: #fff;
 }
 
-body {
-  padding-bottom: 23px;
+.footer-middle, .footer-bottom {
+  background-color: #3c4249;
+}
+
+.line {
+  height: 1px;
+  background-color: #aaa;
+}
+
+.footerfix-container {
+  min-height: calc(100vh - 72px);
 }
