@@ -7,5 +7,6 @@
 <meta name="google-site-verification" content="Fdb3h6i9VSbRysXMwdteA4E2tZnedlygCcIyJBADqKo" />
 
 <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+<link href="{{ asset('/css/all.css') }}" rel="stylesheet">
 
 <title>Download your manual: Free user guides for all brands and devices!</title>
