@@ -13,22 +13,22 @@
 
     <!-- Right -->
     <div>
-      <a href="" class="mr-4 text-reset">
+      <a href="" class="mr-4 text-reset link-style">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="" class="mr-4 text-reset">
+      <a href="" class="mr-4 text-reset link-style">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="" class="mr-4 text-reset">
+      <a href="" class="mr-4 text-reset link-style">
         <i class="fab fa-google"></i>
       </a>
-      <a href="" class="mr-4 text-reset">
+      <a href="" class="mr-4 text-reset link-style">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="" class="mr-4 text-reset">
+      <a href="" class="mr-4 text-reset link-style">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="" class="text-reset">
+      <a href="" class="text-reset link-style">
         <i class="fab fa-github"></i>
       </a>
     </div>

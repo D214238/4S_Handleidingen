@@ -17,10 +17,10 @@ return [
 'home_alt' => "Download je handleiding: Gratis gebruikersgidsen!",
 'homepage_title' => "Download je handleiding",
 'copyright' => "Copyright 2021 Avarix",
-'download_manual' => "Klik hier om je handleiding te downloaden",
-'download_manual_alt' => "Klik hier om je handleiding te downloaden",
-'view_manual' => "Bekijk direct je handleiding",
-'view_manual_alt' => "Bekijk direct je handleiding",
+'download_manual' => "Downloaden",
+'download_manual_alt' => "Downloaden",
+'view_manual' => "Bekijk",
+'view_manual_alt' => "Bekijk",
 'all_brands' => "Alle merken",
 
 ];

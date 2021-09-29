@@ -10043,7 +10043,11 @@ html {
 }
 
 .all-brands-title, .brand-name-title, .brand-manual-discription, .brand-type-name-title, .type-discription, .manual-link {
-  padding-left: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.all-brands-title, .brand-name-title, .brand-type-name-title {
   padding-top: 15px;
 }
 
@@ -10068,4 +10072,47 @@ footer {
 
 .footerfix-container {
   min-height: calc(100vh - 71px);
+}
+
+.link-style {
+  transition: transform 0.3s;
+}
+
+.link-style:hover i {
+  transform: scale(1.8);
+}
+
+.link-style:hover {
+  text-decoration: none;
+}
+
+.manual-link {
+  background-color: #c8daea;
+  box-sizing: content-box;
+  width: 103px;
+  height: 23px;
+}
+
+.manual-link i.fa-download, .manual-link i.fa-book-open {
+  margin-right: 10px;
+}
+
+.manual-link:hover {
+  background-color: #b5cee3;
+}
+
+.manual-link div.filename {
+  display: block;
+}
+
+.manual-link div.view-manual {
+  display: none;
+}
+
+.manual-link:hover div.filename {
+  display: none;
+}
+
+.manual-link:hover div.view-manual {
+  display: block;
 }

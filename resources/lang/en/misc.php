@@ -17,10 +17,10 @@ return [
 'home_alt' => "Download your manual homepage: Free user guides!",
 'homepage_title' => "Download your manual",
 'copyright' => "Copyright 2021 Avarix",
-'download_manual' => "Click here to download the manual",
-'download_manual_alt' => "Download your manual here",
-'view_manual' => "Directly view your manual",
-'view_manual_alt' => "Directly view your manual",
+'download_manual' => "Download",
+'download_manual_alt' => "Download",
+'view_manual' => "View",
+'view_manual_alt' => "View",
 'all_brands' => "All brands",
 
 ];
