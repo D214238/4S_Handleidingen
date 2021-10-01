@@ -24,3 +24,4 @@ return [
 'all_brands' => "Alle merken",
 
 ];
+

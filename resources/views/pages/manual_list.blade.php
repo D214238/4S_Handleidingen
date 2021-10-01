@@ -20,7 +20,7 @@
 		@foreach ($manuals as $manual)
 
 			@if ($manual->locally_available)
-				<a class="manual-link btn" href="/{{ $brand->id }}/{{ $brand->name_url_encoded }}/{{ $type->id }}/{{ $type->name_url_encoded }}/{{ $manual->id }}/" alt="{{ __('misc.view_manual_alt') }}" title="{{ __('misc.view_manual_alt') }}"><div class="filename">{{ $manual->filename }}</div><div class="view-manual"><i class="fas fa-download"></i>{{ __('misc.view_manual') }}</div></a> 
+				<a class="manual-link btn" href="/{{ $brand->id }}/{{ $brand->name_url_encoded }}/{{ $type->id }}/{{ $type->name_url_encoded }}/{{ $manual->id }}/" alt="{{ __('misc.view_manual_alt') }}" title="{{ __('misc.view_manual_alt') }}"><div class="filename">{{ $manual->filename }}</div><div class="view-manual"><i class="fas fa-book-open"></i>{{ __('misc.view_manual') }}</div></a> 
 				({{$manual->filesize_human_readable}})
 			@else
 				<a class="manual-link btn" href="{{ $manual->url }}" target="new" alt="{{ __('misc.download_manual_alt') }}" title="{{ __('misc.download_manual_alt') }}"><div class="filename">{{ $manual->filename }}</div><div class="view-manual"><i class="fas fa-download"></i>{{ __('misc.download_manual') }}</div></a>
