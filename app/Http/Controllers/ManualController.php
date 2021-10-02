@@ -21,4 +21,12 @@ class ManualController extends Controller
             "brand" => $brand,
         ]);
     }
+
+    public function countClicks($brand_id, $brand_slug, $type_id, $type_slug, $manual_id)
+    {
+
+        Manual::where('id', $manual_id)->increment('clicks');
+        $url = Manual::findOrFail($manual_id)->originUrl;
+        return redirect()->away($url);
+    }
 }

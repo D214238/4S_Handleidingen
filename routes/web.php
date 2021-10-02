@@ -57,8 +57,11 @@ Route::get('/{brand_id}/{brand_slug}/', [BrandController::class, 'show'])->name(
 // List of manuals for a type
 Route::get('/{brand_id}/{brand_slug}/{type_id}/{type_slug}/', [TypeController::class, 'show'])->name('manual_list');
 
-// Detail page for a manual
-Route::get('/{brand_id}/{brand_slug}/{type_id}/{type_slug}/{manual_id}/', [ManualController::class, 'show']);
+// Detail page for a manual - does not work in combination with counting clicks on a manual
+// Route::get('/{brand_id}/{brand_slug}/{type_id}/{type_slug}/{manual_id}/', [ManualController::class, 'show']);
+
+// Count clicks on a manual
+Route::get('/{brand_id}/{brand_slug}/{type_id}/{type_slug}/{manual_id}/', [ManualController::class, 'countClicks']);
 
 // List of brands per product category
 Route::get('/category/{category_id}/{category_slug}/', [ProductCategoryController::class, 'show']);
