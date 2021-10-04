@@ -10060,7 +10060,6 @@ html {
 }
 
 .pop-manual-link {
-  font-weight: bold;
   vertical-align: top;
 }
 
@@ -10124,4 +10123,8 @@ footer {
 
 .manual-link:hover div.view-manual {
   display: block;
+}
+
+.container-popular {
+  border: 5px solid #e9ecef;
 }
