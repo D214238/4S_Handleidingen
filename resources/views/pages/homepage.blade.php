@@ -6,6 +6,35 @@
     <p class="introduction-text"><strong>{{ __('introduction_texts.homepage_line_3') }}</strong></p>
 @endsection
 
+@section('popular')
+<?php
+use App\Models\Manual;
+$visible_limit = 10;
+$columns = 2;
+$chunk_size = ceil($visible_limit / $columns);
+$pop_manuals = Manual::orderBy('clicks', 'desc')->limit($visible_limit)->get();
+?>
+<div class="container container-popular popular">
+    <h1 class="popular-manuals-title">
+        @section('title_popular')
+            {{ __('misc.title_popular') }}
+        @show
+    </h1>
+
+    <div class="row">
+        @foreach($pop_manuals->chunk($chunk_size) as $chunk)
+            <div class="col-md-6">
+                <ul>
+                    @foreach($chunk as $manual)
+                        <li><a class="pop-manual-link d-inline-block" href="/{{ $manual->brand->id }}/{{ $manual->brand->name_url_encoded }}/{{ $manual->type->id }}/{{ $manual->type->name_url_encoded }}/">{{ $manual->brand->name }} : {{ $manual->type->name }}</a></li>
+                    @endforeach
+                </ul>
+            </div>
+        @endforeach
+    </div>
+</div>
+@endsection
+
 @section('content')
     <div class="container-brands">
         <h1 class="all-brands-title">

@@ -22,6 +22,7 @@ return [
 'view_manual' => "Bekijk",
 'view_manual_alt' => "Bekijk",
 'all_brands' => "Alle merken",
+'title_popular' => "Populaire handleidingen"
 
 ];
 

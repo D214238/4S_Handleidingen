@@ -9,10 +9,16 @@ class Manual extends Model
 {
     use HasFactory;
 
-    public function types()
+    public function type()
     {
-        return $this->belongsToMany(Type::class);
+        return $this->belongsToMany(Type::class)->first()->hasOne(Type::class, 'id');
     }
+
+    public function brand()
+    {
+        return $this->belongsToMany(Type::class)->first()->belongsTo(Brand::class);
+    }
+    
 
     // Returns the filesize in a human readable format
     public function getFilesizeHumanReadableAttribute(){

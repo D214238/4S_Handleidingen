@@ -40,25 +40,35 @@ html {
     font-size: 1.2rem;
 }
 
-.container-brands, .container-type-list, .container-manuals {
+.container-brands, .container-type-list, .container-manuals, .container-popular {
     background-color: $body-bg2;
     border-radius: 0.25rem;
     margin-bottom: 1rem;
     padding-bottom: 15px;
 }
 
-.all-brands-title, .brand-name-title, .brand-manual-discription, .brand-type-name-title, .type-discription, .manual-link {
+.all-brands-title, .brand-name-title, .brand-manual-discription, .brand-type-name-title, .type-discription, .manual-link, .popular-manuals-title {
     margin-left: 15px;
     margin-top: 15px;
 }
 
-.all-brands-title, .brand-name-title, .brand-type-name-title {
+.all-brands-title, .brand-name-title, .brand-type-name-title, .popular-manuals-title {
     padding-top: 15px;
 }
 
-.brand-link {
+.popular-manuals-title {
+    margin-bottom: 1rem;
+}
+
+.brand-link, .pop-manual-link {
     color: rgb(40, 63, 82);
 }
+
+.pop-manual-link {
+    font-weight: bold;
+    vertical-align: top;
+}
+
 
 footer{
     // position: absolute;

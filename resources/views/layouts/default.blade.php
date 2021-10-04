@@ -24,6 +24,7 @@
                 @if ( isset($_GET['q']) )
                     @include('includes.search_results')
                 @else
+                    @yield('popular')
                     @yield('content')
                 @endif
     

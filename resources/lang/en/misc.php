@@ -22,5 +22,6 @@ return [
 'view_manual' => "View",
 'view_manual_alt' => "View",
 'all_brands' => "All brands",
+'title_popular' => "Popular manuals"
 
 ];
